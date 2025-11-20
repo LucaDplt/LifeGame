@@ -54,4 +54,4 @@ Each generation, the state of a cell is updated based on the number of **alive n
 
 - `./LifeGame`
 - Indicate the Size of the grid : Int -> [Int x Int]
-- indicate the number of frame per second : Int
+- indicate the number of frames per second : Int
