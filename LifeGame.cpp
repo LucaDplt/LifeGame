@@ -211,22 +211,27 @@ void init()
     } while (!isNumber);
     SIZE = stoi(str);
 
-    str = "";
     do
     {
-        isNumber = true;
-        cout<<"Enter the speed (FPS) : ";
-        cin>>str;
-        for(int i = 0; i < str.size(); i++)
+       str = "";
+        do
         {
-            if(!isdigit(str[i]))
+            isNumber = true;
+            cout<<"Enter the speed (FPS) : ";
+            cin>>str;
+            for(int i = 0; i < str.size(); i++)
             {
-                isNumber = false;
-                break;
+                if(!isdigit(str[i]))
+                {
+                    isNumber = false;
+                    break;
+                }
             }
-        }
-    } while (!isNumber);
-    FPS = stoi(str);
+        } while (!isNumber);
+        FPS = stoi(str); 
+    } while(FPS >= 1000000);
+    
+    
 
     ACTUAL_TAB = initTab();
     NEXT_TAB = initTab();
