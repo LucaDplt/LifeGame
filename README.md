@@ -1,4 +1,4 @@
-# LifeGame
+# GameOfLife
 
 ## Conway’s Game of Life Overview
 
@@ -52,6 +52,6 @@ Each generation, the state of a cell is updated based on the number of **alive n
 
 ## How to Run
 
-- `./LifeGame`
+- `./GameOfLife`
 - Indicate the Size of the grid : Int -> [Int x Int]
 - indicate the number of frames per second : Int
